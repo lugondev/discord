@@ -1,8 +1,7 @@
 import {Discord} from "./Discord";
 
-const CHANNEL_ID = "562206828713476096";
-
-const TOKEN = "NTYyMjA3ODg1MTk1NDc3MDAy.XKHveA.DhvSRRcDOXkn8E2Nvu9lxDESLoU";
+const CHANNEL_ID = process.env.CHANNEL_ID;
+const TOKEN = process.env.TOKEN;
 
 Discord.login(TOKEN)
     .then(() => {
